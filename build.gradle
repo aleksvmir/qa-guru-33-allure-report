@@ -25,7 +25,7 @@ test {
 }
 
 allure {
-    version = '2.27.0'  // Здесь должна быть версия командной строки allure
+    version = '2.27.0'
 }
 
 tasks.withType(Test) {
