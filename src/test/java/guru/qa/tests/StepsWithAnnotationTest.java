@@ -10,9 +10,9 @@ public class StepsWithAnnotationTest extends TestConfig {
 
     @Test
     @DisplayName("Проверка корректности названия issue через аннотации")
-    @Severity(SeverityLevel.NORMAL)
-    @Epic("Функционал GitHub")
-    @Feature("Вкладка Issue")
+    @Severity(SeverityLevel.CRITICAL)
+    @Epic("GitHub Issues")
+    @Feature("Просмотр Issues")
     @Owner("aleksvmir")
     public void issueTabNameCorrectAnnotationTest() {
         AllureSteps steps = new AllureSteps();
