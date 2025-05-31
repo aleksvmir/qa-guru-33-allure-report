@@ -11,6 +11,10 @@ public class PureSelenideTest extends TestConfig {
 
     @Test
     @DisplayName("Проверка названия Issue через чистый Selenide с Listener")
+    @Severity(SeverityLevel.CRITICAL)
+    @Epic("GitHub Issues")
+    @Feature("Просмотр Issues")
+    @Owner("aleksvmir")
     void issueTitleCorrectTest() {
         gitHubPage.openMainPage()
                 .clickSearchButton()
