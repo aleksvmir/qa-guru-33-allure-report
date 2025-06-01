@@ -3,7 +3,7 @@ package guru.qa.commonconfig;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
-import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 
@@ -25,8 +25,8 @@ public class TestConfig {
                 .savePageSource(true));
     } 
 
-    @AfterAll
-    static void closeBrowser() {
+    @AfterEach
+    void closeBrowser()
         closeWebDriver();
     }
 }
