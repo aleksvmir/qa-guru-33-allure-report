@@ -26,7 +26,7 @@ public class TestConfig {
     } 
 
     @AfterEach
-    void closeBrowser()
+    void closeBrowser() {
         closeWebDriver();
     }
 }
